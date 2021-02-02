@@ -1,0 +1,1 @@
+This is a project for CS260. It is a website set to showcase several of Utah's National Parks.

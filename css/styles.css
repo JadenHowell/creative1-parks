@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    font-size: 18px;
+    font-family: 'Noto Sans', 'sans-serif';
+}
+
+html{
+    background-color: #e9d5c4;
+}
+
+.bg-primary {
+    background-color: #a5613c !important;
+}
+
+.banner{
+    /*position:relative means all children are gonna bet set realtive to this one*/
+    position: relative;
+}
+.banner img{
+    width: 100%;
+}
+
+#banner-home .title{
+    font-style: 'Alegreya Sans SC', 'sans-serif';
+    font-size: 6vw; /*vw is a unit that scales by view width. smaller screen->smaller text*/
+    color: white;
+    position: absolute;
+    top: 30%;
+    left: 12%;    
+}
+#banner-arches .title{
+    font-style: 'Alegreya Sans SC', 'sans-serif';
+    font-size: 5.5vw; /*vw is a unit that scales by view width. smaller screen->smaller text*/
+    color: white;
+    position: absolute;
+    top: 4%;
+    left: 40%;
+    text-align: right;
+    padding-right: 1%;
+}
+#banner-zion .title{
+    font-style: 'Alegreya Sans SC', 'sans-serif';
+    font-size: 5.5vw; /*vw is a unit that scales by view width. smaller screen->smaller text*/
+    color: white;
+    position: absolute;
+    top: 40%;
+    left: 3%;
+    width: 50%;
+    text-align: left;
+}
+#banner-bryce .title{
+    font-style: 'Alegreya Sans SC', 'sans-serif';
+    font-size: 5.5vw; /*vw is a unit that scales by view width. smaller screen->smaller text*/
+    color: white;
+    position: absolute;
+    top: 5%;
+    left: 13%;
+}
+#banner-other .title{
+    font-style: 'Alegreya Sans SC', 'sans-serif';
+    font-size: 5.5vw; /*vw is a unit that scales by view width. smaller screen->smaller text*/
+    color: white;
+    position: absolute;
+    top: 0%;
+    left: 17%;
+}
+
+.header-caption p{
+    width: 70%;
+    font-size: .8em;
+    margin: 0 auto;
+    text-align: center;
+}
+.header-caption a{
+    font-size: 1em;
+}
+
+.page{
+    background-color: #e9d5c4;
+}
+
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+
+.main-content{
+    width: 80%;
+    margin: 0 auto;
+}
+.main-content h1{
+    margin-top: 10px;
+    text-align: center;
+}
+
+
+.park-list{
+    display:flex;
+    flex-direction: row;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: #a5613c;
+    max-width: 30%;
+    margin: auto;
+    margin-bottom: 10px;
+    text-align: center;
+}  
+.card h1{
+    font-size: 1.3em;
+    color: white;
+}
+.card button {
+    border: none;
+    padding: 10px;
+    color: white;
+    background-color: #2e1201;
+    text-align: center;
+    cursor: pointer;
+    width: 80%;
+}
+.card button:hover {
+    background-color: #5c2301;
+}
+
+ul{
+    list-style: circle;
+}
+
+.button-wrap{
+    display: flex;
+    width:100%;
+    justify-content: center;
+}
+.button {
+    background-color: #2e1201;
+    margin-bottom: 15px;
+    border: 2px solid;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10px; /*This gives a curved corner*/
+}
+.button:hover,
+.button:visited:hover {
+  color: #FFF;
+  background-color: #5c2301;  /* Light blue */
+}
+.button:active,
+.button:visited:active {
+  border: 3px solid;
+}
+
+hr{
+    width: 80%;
+    margin: auto;
+}
+.footer{
+    margin: 2px auto;
+    margin-bottom: 10px;
+    text-align: center;
+    height: 40px;
+}
+.footer p{
+    font-size: .7em;
+}
+.footer a{
+    font-size: 1em;
+}
+
+@media only screen and (max-width: 800px) {
+    .main-content{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .park-list{
+        flex-direction: column;
+    }
+    .card{
+        max-width: 70%;
+    }
+}
